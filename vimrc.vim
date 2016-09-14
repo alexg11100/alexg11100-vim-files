@@ -17,8 +17,7 @@ colo jellybeans
 let g:user_emmet_leader_key='<C-Z>'
 let NERDTreeQuitOnOpen=1
 let g:airline_theme='kalisi'
-set incsearch 
-set hlsearch
+set hlsearch!
 let g:ag_working_path_mode="r"
 
 let g:ctrlp_working_path_mode = 0
@@ -49,6 +48,8 @@ nnoremap ; $a;<esc>
 nnoremap <leader>se :mksession! .vims<cr>
 nnoremap <leader>rs :source .vims<cr>
 nnoremap <leader>ds :call delete(".vims")<cr>
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
 " }}}
 " Vimscript file settings -------------------- {{{
 augroup filetype_vim
