@@ -6,6 +6,7 @@ command! NEC NERDTreeClose
 set nu
 set relativenumber
 set tabstop=3
+" set renderoptions=type:directx
 let mapleader = ","
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -24,6 +25,8 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " Mappings ----------------------------- {{{
 nnoremap <F5> :GundoToggle<CR>
+nnoremap <F4> :NERDTree<CR>
+nnoremap <F3> :NERDTreeClose<CR>
 nnoremap <F7> :tabr<CR>
 nnoremap <F8> :tabl<CR>
 vmap <expr> <LEFT> DVB_Drag('left')
@@ -43,8 +46,7 @@ nnoremap <leader>( viw<esc>a)<esc>hbi(<esc>lel
 nnoremap <leader>[ viw<esc>a]<esc>hbi[<esc>lel
 nnoremap <leader>{ viw<esc>a}<esc>hbi{<esc>lel
 inoremap jk <esc>
-" inoremap <esc> <nop>
-nnoremap ; $a;<esc>
+nnoremap ; $a
 nnoremap <leader>se :mksession! .vims<cr>
 nnoremap <leader>rs :source .vims<cr>
 nnoremap <leader>ds :call delete(".vims")<cr>
