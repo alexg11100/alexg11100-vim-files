@@ -6,7 +6,6 @@ command! NEC NERDTreeClose
 set nu
 set relativenumber
 set tabstop=3
-" set renderoptions=type:directx
 let mapleader = ","
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -14,10 +13,10 @@ set t_8f=^[[38;2;%lu;%lu;%lum
 set t_8b=^[[48;2;%lu;%lu;%lum
 set laststatus=2
 set background=dark
-colo jellybeans
+colo dracula
 let g:user_emmet_leader_key='<C-Z>'
 let NERDTreeQuitOnOpen=1
-let g:airline_theme='kalisi'
+let g:airline_theme='badwolf'
 set hlsearch!
 let g:ag_working_path_mode="r"
 
