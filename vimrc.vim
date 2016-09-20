@@ -22,6 +22,16 @@ let g:ag_working_path_mode="r"
 
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+" gvim stuff --------------------{{{
+if has("gui_running")
+    set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+	 set guioptions-=m  "remove menu bar
+	 set guioptions-=T  "remove toolbar
+	 set guioptions-=r  "remove right-hand scroll bar
+	 set guioptions-=L  "remove left-hand scroll bar
+	 set lines=50 columns=100
+endif
+" }}}
 " Mappings ----------------------------- {{{
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F4> :NERDTree<CR>
