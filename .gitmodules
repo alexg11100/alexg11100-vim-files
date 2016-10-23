@@ -67,3 +67,12 @@
 [submodule "vim/bundle/vim-airline"]
 	path = vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/bundle/promptline.vim"]
+	path = vim/bundle/promptline.vim
+	url = https://github.com/edkolev/promptline.vim.git
+[submodule "vim/bundle/swift.vim"]
+	path = vim/bundle/swift.vim
+	url = https://github.com/keith/swift.vim.git
+[submodule "vim/bundle/vim-quantum"]
+	path = vim/bundle/vim-quantum
+	url = https://github.com/tyrannicaltoucan/vim-quantum.git
