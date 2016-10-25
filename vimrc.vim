@@ -14,14 +14,13 @@ set expandtab
 let mapleader = ","
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-set t_8f=^[[38;2;%lu;%lu;%lum
-set t_8b=^[[48;2;%lu;%lu;%lum
 set laststatus=2
 set background=dark
-colo dracula
+colorscheme quantum
+let g:quantum_black = 1
 let g:user_emmet_leader_key='<C-Z>'
 let NERDTreeQuitOnOpen=1
-let g:airline_theme='luna' "badwolf
+let g:airline_theme='quantum' 
 set hlsearch!
 let g:ag_working_path_mode="r"
 let g:user_emmet_leader_key = '<c-s>'
@@ -30,7 +29,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " gvim stuff --------------------{{{
 if has("gui_running")
-    set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
+     set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
 	 set guioptions-=m  "remove menu bar
 	 set guioptions-=T  "remove toolbar
 	 set guioptions-=r  "remove right-hand scroll bar
