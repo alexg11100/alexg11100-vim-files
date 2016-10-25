@@ -53,7 +53,7 @@
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git z vi-mode sudo)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -95,9 +95,8 @@ antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
    z
-   sudo
 EOBUNDLES
 
-antigen theme fox
+antigen theme
 
 antigen apply
