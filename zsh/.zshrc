@@ -95,9 +95,9 @@ antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
    z
-   git
-   vi-mode
    sudo
 EOBUNDLES
+
+antigen theme fox
 
 antigen apply
