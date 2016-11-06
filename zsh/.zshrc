@@ -98,6 +98,6 @@ antigen bundles <<EOBUNDLES
    z
 EOBUNDLES
 
-antigen theme
+antigen theme fox
 
 antigen apply
