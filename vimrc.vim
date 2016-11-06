@@ -50,7 +50,7 @@ vmap <expr> <UP> DVB_Drag('up')
 vmap <expr> D DVB_Duplicate()
 nnoremap - ddp
 " Shortcut for do and end in Elixir or Ruby
-inoremap <leader>do do<enter>end<esc>O<tab>
+inoremap <leader>do do<enter>end<esc>O
 nnoremap <leader>ev :tabe $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>eb :tabe ~/.bashrc<cr>
@@ -62,7 +62,6 @@ nnoremap <leader>[ viw<esc>a]<esc>hbi[<esc>lel
 nnoremap <leader>{ viw<esc>a}<esc>hbi{<esc>lel
 inoremap jk <esc>
 nnoremap ; $a
-nnoremap <leader>y hxp
 nnoremap <leader>se :mksession! .vims<cr>
 nnoremap <leader>rs :source .vims<cr>
 nnoremap <leader>ds :call delete(".vims")<cr>

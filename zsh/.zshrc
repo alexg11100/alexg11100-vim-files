@@ -86,6 +86,7 @@ export EDITOR='nvim'
 alias vim=nvim
 alias vi=nvim
 alias v=nvim
+alias g=gvim
 alias revision="cd ~/Dropbox/School/revision"
 
 # Antigen 
