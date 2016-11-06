@@ -62,6 +62,7 @@ nnoremap <leader>[ viw<esc>a]<esc>hbi[<esc>lel
 nnoremap <leader>{ viw<esc>a}<esc>hbi{<esc>lel
 inoremap jk <esc>
 nnoremap ; $a
+nnoremap <leader>y hxp
 nnoremap <leader>se :mksession! .vims<cr>
 nnoremap <leader>rs :source .vims<cr>
 nnoremap <leader>ds :call delete(".vims")<cr>
