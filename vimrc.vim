@@ -29,7 +29,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " gvim stuff --------------------{{{
 if has("gui_running")
-     set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 13
+     set guifont=Droid\ Sans\ Mono\ Dotted\ For\ Powerline\ 11
 	 set guioptions-=m  "remove menu bar
 	 set guioptions-=T  "remove toolbar
 	 set guioptions-=r  "remove right-hand scroll bar
