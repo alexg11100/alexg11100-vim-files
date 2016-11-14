@@ -82,3 +82,6 @@
 [submodule "vim/bundle/Base2Tone-vim"]
 	path = vim/bundle/Base2Tone-vim
 	url = https://github.com/atelierbram/Base2Tone-vim.git
+[submodule "vim/bundle/vim-syntax-extra"]
+	path = vim/bundle/vim-syntax-extra
+	url = https://github.com/justinmk/vim-syntax-extra.git
