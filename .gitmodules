@@ -76,3 +76,9 @@
 [submodule "vim/bundle/vim-quantum"]
 	path = vim/bundle/vim-quantum
 	url = https://github.com/tyrannicaltoucan/vim-quantum.git
+[submodule "vim/bundle/vim-two-firewatch"]
+	path = vim/bundle/vim-two-firewatch
+	url = https://github.com/rakr/vim-two-firewatch.git
+[submodule "vim/bundle/Base2Tone-vim"]
+	path = vim/bundle/Base2Tone-vim
+	url = https://github.com/atelierbram/Base2Tone-vim.git

@@ -35,6 +35,8 @@ if has("gui_running")
 	 set guioptions-=r  "remove right-hand scroll bar
 	 set guioptions-=L  "remove left-hand scroll bar
 	 set lines=50 columns=100
+     let g:airline_theme='quantum' 
+     colo Base2Tone-Evening-dark
 endif
 " }}}
 " Mappings ----------------------------- {{{
