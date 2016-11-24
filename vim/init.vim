@@ -1,1 +1,1 @@
-/home/alex/.alex-dotfiles/vimrc.vim
+/Users/alex/.alex-dotfiles/vimrc.vim

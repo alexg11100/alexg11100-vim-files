@@ -29,7 +29,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " gvim stuff --------------------{{{
 if has("gui_running")
-     set guifont=Droid\ Sans\ Mono\ Dotted\ For\ Powerline\ 11
+     " set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline:h13
 	 set guioptions-=m  "remove menu bar
 	 set guioptions-=T  "remove toolbar
 	 set guioptions-=r  "remove right-hand scroll bar
@@ -45,11 +45,6 @@ nnoremap <F4> :NERDTree<CR>
 nnoremap <F3> :NERDTreeClose<CR>
 nnoremap <F7> :tabr<CR>
 nnoremap <F8> :tabl<CR>
-vmap <expr> <LEFT> DVB_Drag('left')
-vmap <expr> <RIGHT> DVB_Drag('right')
-vmap <expr> <DOWN> DVB_Drag('down')
-vmap <expr> <UP> DVB_Drag('up')
-vmap <expr> D DVB_Duplicate()
 nnoremap - ddp
 " Shortcut for do and end in Elixir or Ruby
 inoremap <leader>do do<enter>end<esc>O
@@ -72,6 +67,7 @@ omap / <Plug>(easymotion-tn)
 nnoremap <leader>mp :call Make()<cr>
 nnoremap <leader>mr :call MakeRun()<cr>
 nnoremap <leader>mc :call MakeClean()<cr>
+nnoremap <leader>cr :! cargo run<cr>
 nnoremap <leader>pb :! pebble build && pebble install<cr>
 " }}}
 " Vimscript file settings -------------------- {{{

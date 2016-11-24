@@ -1,7 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH Path to your oh-my-zsh installation.
   export ZSH=/home/alex/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -83,23 +81,27 @@ export EDITOR='nvim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# source ~/.iterm2_shell_integration.`basename $SHELL`
+
 alias vim=nvim
 alias vi=nvim
 alias v=nvim
-function g {
-/usr/bin/gvim -f $* > /dev/null 2> /dev/null & disown
-}
+alias g=mvim
 alias revision="cd ~/Dropbox/School/revision"
 
 # Antigen 
-source ~/Documents/antigen/antigen/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
    z
+   sudo
 EOBUNDLES
 
 antigen theme
 
 antigen apply
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
