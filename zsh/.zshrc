@@ -89,9 +89,16 @@ alias vi=nvim
 alias v=nvim
 alias g=mvim
 alias revision="cd ~/Dropbox/School/revision"
+alias ubuntu="ssh -p 3022 alex@127.0.0.1"
+alias ubuntu-shutdown="VBoxManage controlvm 'Ubuntu Server' poweroff"
+alias ubuntu-start="VBoxManage startvm 'Ubuntu Server' --type headless"
+alias et="vim ~/Documents/APS/today.txt"
 
 # Antigen 
 source $(brew --prefix)/share/antigen/antigen.zsh
+
+# rust
+source $HOME/.cargo/env
 
 antigen use oh-my-zsh
 
@@ -105,3 +112,15 @@ antigen theme
 antigen apply
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="$HOME/.yarn/bin:$PATH"
+
+function exportaps {
+    for DATE in $(aps ab)
+    do
+        echo $DATE >> $1
+        echo >> $1
+        aps rb $DATE >> $1
+        echo "\n\n" >> $1
+    done
+}

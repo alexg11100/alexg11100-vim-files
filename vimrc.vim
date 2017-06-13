@@ -40,6 +40,12 @@ if has("gui_running")
 endif
 " }}}
 " Mappings ----------------------------- {{{
+
+function Xcodebuild()
+    execute '!xcodebuild'
+    execute '!./build/Release/BYOLisp'
+endfunction
+
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F4> :NERDTree<CR>
 nnoremap <F3> :NERDTreeClose<CR>
@@ -68,7 +74,10 @@ nnoremap <leader>mp :call Make()<cr>
 nnoremap <leader>mr :call MakeRun()<cr>
 nnoremap <leader>mc :call MakeClean()<cr>
 nnoremap <leader>cr :! cargo run<cr>
+nnoremap <leader>xb :call Xcodebuild()<cr>
 nnoremap <leader>pb :! pebble build && pebble install<cr>
+
+
 " }}}
 " Vimscript file settings -------------------- {{{
 augroup filetype_vim
